@@ -46,8 +46,6 @@ router.post(
       console.error(error)
       res.status(500).json({ status: 'NG', errors: [{ msg: 'データベースエラー。' }] })
     }
-
-    res.json({ status: 'OK', comment: comment });
   }
 );
 
